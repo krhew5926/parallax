@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#777;
+}
+
+footer {
+    height: 50px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-size: 12pt;
+	padding: 19px 0px 0px 0px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #4EA5DF;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #8B34ED;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.99;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('images/marchmadness.webp');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('images/madness.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('images/bracket.png');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.light{
+  background-color:#f4f4f4;
+  color:#777;
+}
+
+.dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+	footer {
+		height: auto
+	}
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+@media(max-width:385px){
+	.ptext {
+		font-size: 24px;
+	}
+	footer {
+		height: auto
+	}
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+@media(max-width:358px){
+	.ptext {
+		font-size: 20px;
+	}
+	footer {
+		height: auto
+	}
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
